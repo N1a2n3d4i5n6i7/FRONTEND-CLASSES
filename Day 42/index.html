@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Array Methods
+        1.Map
+        2. Filter
+        3. Reduce
+
+    -->
+    <script>
+//const  mynumbers = [1,2,3,4,5] // output should come in console.log
+//console.log(mynumbers);
+// now the SECOND CASE is output should come in separate 
+//console.log(mynumbers[0]);
+//console.log(mynumbers[1]);
+//console.log(mynumbers[2]);
+//console.log(mynumbers[3]);
+//console.log(mynumbers[4]);
+// now the THIRD CASE is ouput should come in separate separate but you should not write every single line ki above
+//here we have to use for loop
+// for(i=0;i<=mynumbers.length;i++){
+//     console.log(mynumbers[i]);
+// }
+
+//CASE 4
+const newvalues =[1,2,3,4,5,6] // output should come in [1,4,9,16,25,36]
+const outputvalues =[];
+for (let i=0;i<newvalues.length;i++){
+    outputvalues.push(newvalues[i] * newvalues[i]);
+    
+}
+console.log(outputvalues);
+//CASE 5
+const newnumbers =[1,2,3,4,5] // here output should come in [2,4,6,8,10]
+ const outputnumbers =[];
+ for(let i=0;i<newnumbers.length;i++){
+    outputnumbers.push(newnumbers[i]+newnumbers[i]);
+ }
+console.log(outputnumbers);
+    </script>
+</body>
+</html>

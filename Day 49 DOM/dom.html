@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- DOM (document object model)
+     Javascript can read/write and manipulate the dom
+    1) Get Document elements by id
+ 2) -->
+    <header id="main-header" class="bg-primary text-white">
+<div class="container">
+<h1 id="my-h1" class="header-title"> DOM APP</h1>
+</div>
+    </header>
+    <div class="container">
+        <div id="main" class="card card-body">
+            <h2 class="title"> ADD TASK</h2>
+            <form class="form-inlne">
+                <input type="text" class="form-control">
+                <input type="submit" class="btn btn-success">
+            </form>
+            <h2> Task List</h2>
+            <ul id="items" class="list-group">
+                <li class="list-group-item"> Item 1</li>
+                <li class="list-group-item"> Item 2</li>
+                <li class="list-group-item"> Item 3</li>
+                <li class="list-group-item"> Item 4</li>
+                <li class="list-group-item"> Item 5</li>
+                 </ul>
+        </div>
+
+    </div>
+    <script src="dom.js"></script>
+</body>
+</html>

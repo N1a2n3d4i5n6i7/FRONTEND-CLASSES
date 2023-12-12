@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employment-Detailstask</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm" style="background-color: blueviolet;">
+       
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                         <a class="nav-link text-white" href="#"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                         <a class="nav-link text-white"  href="#"> About </a>
+                    </li>
+                    <li class="nav-item"> 
+                         <a class="nav-link text-white" href="#"> Contact </a>
+                    </li>
+                     </ul>
+                  </nav>
+                  <div class="container mt-3">
+                  <div class="row">
+                    <div class="col-3 p-5 bg-success "style="margin-left:20px ; width:250px;">
+                        <button class="btn btn-primary" onclick="allEmployees()">GET ALL EMPLOYEE DETAILS</button>   
+                    </div>
+                    <div class="col-3 p-5 bg-danger " style="margin-left:20px ; width: 250px;">
+                       
+                        <button class="btn btn-primary" onclick="allFemaleEmployees()">All Female Employees</button>
+                    </div>
+                    <div class="col-3 p-5 text-bg-success" style="margin-left:20px; width:250px">
+                        <button class="btn btn-primary" onclick="allMaleEmployees()">All Male Employees</button> 
+                    </div>
+                    <div class="col-3 p-5 text-bg-danger" style="margin-left:20px; width:250px;">
+                        <button class="btn btn-primary" onclick="allTeamLeads()">All Team Leads</button> 
+                    </div>
+
+                </div>
+                <div class="row p-2">
+                    <div class="col-3 p-5 bg-success "style="margin-left:20px ; width:250px;">
+                        <button class="btn btn-primary" onclick="allManagers()">ALL Managers</button>   
+                    </div>
+                    <div class="col-3 p-5 bg-danger " style="margin-left:20px ; width: 250px;">
+                       
+                        <button class="btn btn-primary" onclick="allsenioremployees()"> ALL SENIOR EMPLOYEES</button>
+                    </div>
+                    <div class="col-3 p-5 text-bg-success" style="margin-left:20px; width:250px">
+                        <button class="btn btn-primary" onclick="alljunioremployees()"> ALL JUNIOR EMPLOYEES</button> 
+                    </div>
+                    <div class="col-3 p-5 text-bg-danger" style="margin-left:20px; width:250px;">
+                        <button class="btn btn-primary" onclick=" allhighsalaryemployees()">ALL HIGH SALARY EMPLOYEES</button> 
+                    </div>
+
+                </div>
+                <div class="row p-2">
+                    <div class="col-3 p-5 bg-success "style="margin-left:20px ; width:250px;">
+                        <button class="btn btn-primary" onclick=" alllowsalaryemployees()">ALL LOW SALARY EMPLOYEES</button>   
+                    </div>
+                    <div class="col-3 p-5 bg-danger " style="margin-left:20px ; width: 250px;">
+                       
+                        <button class="btn btn-primary" onclick="incrementallemployees()">INCREMENT ALL EMPLOYEES</button>
+                    </div>
+                    <div class="col-3 p-5 text-bg-success" style="margin-left:20px; width:250px">
+                        <button class="btn btn-primary">LOGIN</button> 
+                    </div>
+                    <div class="col-3 p-5 text-bg-danger" style="margin-left:20px; width:250px;">
+                        <button class="btn btn-primary">LOGIN</button> 
+                    </div>
+
+                </div>
+                <div class="row p-2">
+                    <div class="col-3 p-5 bg-success "style="margin-left:20px ; width:250px;">
+                        <button class="btn btn-primary">LOGIN</button>   
+                    </div>
+                    <div class="col-3 p-5 bg-danger " style="margin-left:20px ; width: 250px;">
+                       
+                        <button class="btn btn-primary">LOGIN</button>
+                    </div>
+                    <div class="col-3 p-5 text-bg-success" style="margin-left:20px; width:250px">
+                        <button class="btn btn-primary">LOGIN</button> 
+                    </div>
+                    <div class="col-3 p-5 text-bg-danger" style="margin-left:20px; width:250px;">
+                        <button class="btn btn-primary">LOGIN</button> 
+                    </div>
+
+                </div>
+                </div>
+
+                <script>
+    var employeesData = [ 
+                        {
+     name: "Manohar Lotlapalli",  empId: 1201 ,  doj: "12-08-2013",  salary: 30000, role: 'Office Boy', 
+     empstatus: true, gender: 'male', age : 35, },
+     { 
+        name: "Basheer",  empId: 1202 ,  doj: "25-11-2023", salary: 80000, role: 'Team Lead', empstatus: true, 
+        gender: 'male', age : 26, },  
+     { 
+         name: "Satish", empId: 1203, doj: "10-08-2014",salary: 85000, role: 'Manager', empstatus: true, 
+         gender: 'male', age : 28, },
+    {  
+        name: "Kalyani", empId: 1204, doj: "20-06-2017", salary: 30000, role: 'Assosiate', empstatus: true, 
+        gender: 'female', age : 24, },
+    {  
+        name: "Nandini", empId: 1205, doj: "10-04-2019", salary: 80000, role: 'Team Lead', empstatus: true, 
+        gender: 'female', age : 23, },
+    {  
+        name: "Suresh", empId: 1206, doj: "11-05-2019", salary: 80000, role: 'Team Lead', empstatus: true, 
+        gender: 'male', age : 25, },
+    {  
+        name: "Sravanthi", empId: 1207, doj: "21-07-2015", salary: 30000, role: 'Assosiate', empstatus: true, 
+        gender: 'female', age : 21, },
+    {  
+      name: "Rajkumar",  empId: 1208,  doj: "15-02-2018",  salary: 60000, role: 'Team Lead', empstatus: false, 
+      gender: 'male', age : 24, },
+   {  
+      name: "Swapna", empId: 1209, doj: "13-09-2014", salary: 70000, role: 'HR', empstatus: true, 
+      gender: 'female', age : 30, },
+    {  
+      name: "Rajeswari", empId: 1210, doj: "23-05-2011", salary: 20000,  role: 'Receptionist', empstatus: true, 
+      gender: 'female', age : 30, },
+     {
+      name: "Prasad", empId: 1211, doj: "05-09-2018", salary: 85000,  role: 'Manager', empstatus: true, 
+      gender: 'male', age : 32, },
+    {  
+     name: "Nagulmeera", empId: 1212, doj: "13-03-2014", salary: 80000, role: 'Team Lead', empstatus: true, 
+     gender: 'male', age : 25, },
+    {  
+    name: "Bhargav", empId: 1213, doj: "22-01-2019", salary: 30000, role: 'Assosiate', empstatus: true, 
+    gender: 'male', age : 23, },
+    {  
+      name: "Suryakumar", empId: 1214, doj: "22-01-2019", salary: 85000, role: 'Manager', empstatus: true, 
+    gender: 'male', age : 27, },
+{  
+  name: "Pooja", empId: 1215, doj: "10-12-2014", salary: 70000, role: 'HR', empstatus: false, gender: 'female', age : 25, },
+{  
+  name: "Varun", empId: 1216, doj: "04-09-2020", salary: 30000, role: 'Assosiate', empstatus: false, gender: 'male', age : 21, },
+{  
+  name: "Srikanth", empId: 1217, doj: "18-03-2011", salary: 100000, role: 'Manager', empstatus: false,  gender: 'male', age : 35, },
+{  
+name: "Ankitha", empId: 1218,  doj: "14-01-2021", salary: 30000, role: 'Assosiate', empstatus: true, gender: 'female', age : 21, }, 
+{  
+name: "Kiran", empId: 1219, doj: "04-09-2020", salary: 80000, role: 'Team Lead', empstatus: false,  gender: 'male', age : 23, },
+ {  
+name: "Vinay", empId: 1220, doj: "13-08-2021", salary: 85000,  role: 'Manager',  empstatus: false, gender: 'male', age : 33, },
+
+];
+var emp = employeesData.length;
+//console.log(employeesData.length);
+// Displaying all Employ names
+function allEmployees()
+{
+    for (let i=0; i<emp; i++)
+    {
+        console.log(employeesData[i].name);
+    }
+}
+// Displaying all Female Employees
+function allFemaleEmployees()
+{
+    for (let i=0; i<emp; i++)
+    {
+        if(employeesData[i].gender == "female") {
+        console.log(employeesData[i].name);
+       
+    }
+}
+}
+// Displaying all Male Employees
+function allMaleEmployees()
+{
+    for (let i=0; i<emp; i++)
+    {
+        if(employeesData[i].gender == "male") {
+        console.log(employeesData[i].name);
+    }
+}
+}
+
+// Displaying  all Team Lead
+function allTeamLeads()
+{
+    for (let i=0; i<emp; i++)
+    {
+        if(employeesData[i].role == "Team Lead") {
+        console.log(employeesData[i].name);
+    }
+}
+}
+// Displaying all Managers
+
+function allManagers()
+{
+    for (let i=0; i<emp; i++)
+    {
+        if(employeesData[i].role == "Manager") {
+        console.log(employeesData[i].name);
+    }
+}
+}
+// Displaying all Senior Employees
+
+function allsenioremployees()
+{
+  for (let i=0; i<emp; i++)
+  {
+    if(employeesData[i].age>30){
+        console.log(employeesData[i].name);
+    }
+  }
+}
+
+// Displaying all junior employees
+
+function alljunioremployees()
+{
+  for (let i=0; i<emp; i++)
+  {
+    if(employeesData[i].age<30){
+        console.log(employeesData[i].name);
+    }
+  }
+}
+
+// Displaying all High Salary Employees
+
+function allhighsalaryemployees()
+{
+  for (let i=0; i<emp; i++)
+  {
+    if(employeesData[i].salary>50000){
+        console.log(employeesData[i].name);
+    }
+  }
+}
+
+// Displaying all Low Salary Employees
+
+function alllowsalaryemployees()
+{
+  for (let i=0; i<emp; i++)
+  {
+    if(employeesData[i].salary<50000){
+        console.log(employeesData[i].name);
+    }
+  }
+}
+
+// Displaying increment Employees
+
+function incrementallemployees()
+{
+  for (let i=0; i<emp; i++)
+  {
+    var increment = employeesData[i].salary + 100000;
+    console.log(increment);
+  }
+}
+
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="container">
+        <div class="progress mt-3 " style="height:30px;">
+            <div class="progress-bar bg-primary " style="width:75%;"> Profile Status : 75%</div>
+          </div>
+          <div class="progress mt-3 " style="height:30px;">
+            <div class="progress-bar bg-success " style="width:95%;"> Profile Status : 95%</div>
+          </div>
+          <div class="progress mt-3 " style="height:30px;">
+            <div class="progress-bar bg-danger " style="width:55%;"> Profile Status : 55%</div>
+          </div>
+          <div class="progress mt-3 " style="height:30px;">
+            <div class="progress-bar bg-primary progress-bar-striped " style="width:90%;"> Profile Status : 90%</div>
+          </div>
+          <div class="progress mt-3 " style="height:30px;">
+            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:90%;"> Profile Status : 90%</div>
+          </div>
+
+         <!-- collapse--> 
+         <button class="btn btn-success mt-3" data-bs-toggle="collapse" data-bs-target="#mycol"> More Details </button>
+         <div class="collapse" id="mycol">
+            <p> This Info related to bootstrap</p></div>
+
+            <button class="btn btn-success mt-3" data-bs-toggle="collapse" data-bs-target="#mycol1"> Show More </button>
+            <div class="collapse" id="mycol1">
+               <table class="table table-bordered mt-3 ">
+                   <tr>
+                       <th>Movie Name</th>
+                       <th>Director</th>
+                       <th>Hero</th>
+                   </tr>
+                   <tr>
+                       <td>kushi</td>
+                       <td>shivaniravana</td>
+                       <td>vijay</td>
+                   </tr>
+                   <tr>
+                       <td>Rajarani</td>
+                       <td>Atlee</td>
+                       <td>Arya</td>
+                       </tr>
+               </table>
+               </div>
+      <!-- collapse/Accordian-->     
+      <div id="accordian">
+        <div class="card mt-3">
+          <div class="card-header">
+            <a data-bs-toggle="collapse" href="#module1" class="btn" > Module1 - My Personal Details</a>
+          </div>
+          <div id="module1" class="collapse show" data-bs-parent="accordian">
+           <div class="card-body">
+            <p> Name - Nandini Ragi
+                Studied in India , currently staying in New Jersey,USA</p>
+          </div>
+          </div>
+         </div>
+
+         <div class="card">
+          <div class="card-header">
+            <a data-bs-toggle="collapse" href="#module2" class="btn" > Module2 - My Educational Details</a>
+          </div>
+          <div id="module2" class="collapse show" data-bs-parent="accordian">
+           <div class="card-body">
+            <p> Did my Bachelors in Electronics and communication Engineering </p>
+            </div>
+          </div>
+         </div>
+
+         <div class="card">
+          <div class="card-header">
+            <a data-bs-toggle="collapse" href="#module3" class="btn" > Module3 - Tools</a>
+          </div>
+          <div id="module3" class="collapse show" data-bs-parent="accordian">
+           <div class="card-body">
+            <p> Have knowledge and experience in Front End technologies</p>
+            </div>
+          </div>
+          </div>
+         </div>
+
+   
+
+    
+</body>
+</html>

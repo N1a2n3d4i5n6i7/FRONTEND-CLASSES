@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: cornflowerblue;
+}
+header{
+    background-color: rgb(65, 58, 167);
+    font-size: larger;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+footer{
+    background-color: rgb(76, 67, 161);
+    font-size: small;
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+nav{
+    float: left;
+    background-color: lightseagreen;
+    height: 300px;
+    width: 25%;
+}
+article{
+    float: left;
+    background-color: chocolate;
+    width:75%;
+    height: 300px;
+   
+text-align: center;
+}

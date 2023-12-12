@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: #333545;
+    color: white;
+    text-align: center;
+    height: 100px;
+    padding: 10px;
+}
+
+
+.navbar{
+    background-color: #222539;
+   
+}
+ul{
+   color: white; 
+   padding: 20px;
+
+}
+li{
+    display: inline;
+    padding: 15px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.left-part{
+    background-color: #603F83FF;
+    height: 420px;
+    width: 50%;
+    float: left;
+}
+.right-part{
+    background-color:#C7D3D4FF ;
+    height: 420px;
+    width: 50%;
+    float: left;
+}
+.footer{
+    background-color: #333545;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    
+}
+.movies-left-content{
+    background-color:#FFD662FF ;
+    width: 19.5%;
+    height: 420px ;
+    float: left;
+}
+.movies-right-content{
+    background-color:#00539CFF ;
+    width: 79.5%;
+    height: 420px;
+    float: left;
+}
+.plays-left-content{
+    background-color:#DF6589FF ;
+    width: 70%;
+    height: 420px;
+    float: left;
+}
+.plays-right-content{
+    background-color: #3C1053FF;
+    width: 30%;
+    height:420px;
+    float: left;
+}
+.sports-left-content{
+    background-color:#FC766AFF ;
+    width: 50%;
+    height: 420px;
+    float: left;
+}
+.sports-right-content{
+    background-color:#5B84B1FF ;
+    width: 50%;
+    height: 420px;
+    float: left;
+}
+.stream-left-content{
+    background-color: #00203FFF;
+    width: 60%;
+    height: 400px;
+    float: left;
+}
+.stream-right-content{
+    background-color: #ADEFD1FF;
+    width: 40%;
+    height: 400px;
+    float: left;
+}
+@media (max-width:600px) {
+    .left-part, .right-part{
+        width:100%;
+       
+    }
+}
+@media(max-width:600px) {
+    .movies-left-content, .movies-right-content{
+width: 100%;
+    }
+    
+}
+@media(max-width:600px) {
+    .plays-left-content, .plays-right-content{
+width: 100%;
+    }
+    
+}
+@media(max-width:600px) {
+    .sports-left-content, .sports-right-content{
+width: 100%;
+    }
+    
+}
+@media(max-width:600px) {
+    .stream-left-content, .stream-right-content{
+width: 100%;
+    }
+    
+}

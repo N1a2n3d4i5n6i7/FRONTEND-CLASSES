@@ -1,0 +1,67 @@
+/<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text"value="" id="incrementamount">
+    <input type="button" onclick="addincrement()" value="addincrement">
+    <!-- (Array Methods)
+        1.Map----to access each and every element in the array
+        2.Filter ---to access particular element in the array
+        3.Reduce---we have to mix and reduce the elements
+    -->
+    <script>
+        const numbers = [1,2,3,4,5] // to get the ouptup as [2,4,6,8,10] we have to use Map
+        const number1 = [1,2,3,4,5] // output should be [2,4]  we have to use FILTER
+        const number2 = [1,2,3,4,5] // output shoud be [15]
+    const employes =[100,120,140,165] // output should come as [120,140,160,185] map method
+  //<!-- here we r doing for the line16-->
+
+  //map
+     const addingnumbers = numbers.map((num)=>{ //  num is a parameter herewe canalso use i inplace of num
+        return num+num; // or num*2
+     });
+     console.log(addingnumbers);
+     // we r doing for line 20
+     function addincrement(){
+        const amount = document.getElementById("incrementamount").value; // input value ivvali antay document.get anaydhi use cheyali
+        const updatedsalary = employes.map((sal)=>{
+            return sal + Number(amount);
+        });
+        console.log(updatedsalary);
+        
+     }
+
+     const myemployes = [ 
+        { name : "kiran" , age: 35},
+        { name : "suresh" , age: 27},      
+          { name : "ramesh" , age: 39},
+      ];
+      // output 35 ravali antay general ga will use console.log(myemployes[0].age);
+// output 35,27,49 ravali antay
+
+const empAge = myemployes.map((emp)=>{
+    return emp.name;
+});
+console.log(empAge);
+
+//Filter
+const agegrt30 = myemployes.filter((emp)=>{
+    return emp.age>30;
+});
+console.log(agegrt30);
+
+//Reduce
+const randomnumbers = [1,2,3,4,5] //15
+const reducedarray = randomnumbers.reduce((acc,cnumber)=>{
+return acc + cnumber;
+},0);
+console.log(reducedarray );
+
+
+     </script>
+</body>
+</html>

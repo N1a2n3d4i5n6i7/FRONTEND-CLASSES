@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .redbox {
+            background-color: red;
+            color: white;
+            padding: 15px;
+            float: left;
+            width: 25%;
+        }
+        .greenbox {
+            background-color: green;
+            color: white;
+            padding: 15px;
+            float: left;
+            width: 50%;
+        }
+        .bluebox {
+            background-color: blue;
+            color: white;
+            padding: 15px;
+            float: left;
+            width: 25%;
+        }
+
+        /*
+          // Mobile friendly css - Media Quireies/ media screen quires.
+          // synamx
+            device- width -max  : 500px {
+             redbox, blurbox. redbox { width: 100%}     
+           }
+        */
+
+        @media screen and (max-width: 600px) {
+            /* .redbox {
+                width: 100%;
+            }
+
+            .bluebox {
+                width: 100%;
+            }
+
+            .greenbox {
+                width: 100%;
+            } */
+
+            .redbox, .bluebox, .greenbox {
+                width: 100%;
+            }
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div class="redbox">Red - Box</div>
+        <div class="greenbox">Green-box</div>
+        <div class="bluebox">Blue-box</div>
+    </div>
+</html>

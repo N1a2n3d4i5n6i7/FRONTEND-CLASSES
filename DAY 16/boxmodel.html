@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxmodel</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .one{
+            background-color: blueviolet;
+        height: auto;
+        padding-top: 50px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        padding-left:20px ;
+        margin-top: 30px;
+        margin-right: 30px;
+        margin-bottom:30px ;
+        margin-left: 30px;
+        border-width: 20px;
+        border-style: solid;
+        border-color: brown;
+        }
+.my-button{
+    background-color: blue;
+    height: 40px;
+    width: 100px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+
+}
+.my-input{
+    height: 40px;
+    width: 60%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: darkred;
+    border-radius: 3px;
+    padding: 20px;
+}
+    </style>
+</head>
+<body>
+    <!-- Boxmodel meaning is padding, border and margin all these set -->
+    <div class="one">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, magnam nobis iure quasi nulla quas illo earum eos ea veniam error necessitatibus id nemo, maiores similique inventore fugit voluptatem reprehenderit!
+</div>
+<input type="button" class="my-button" value="booknow">
+<input type="text" class="my-input" id="name" name="name" placeholder="location">
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <!-- JSON(javascript object notation) - the format is json(looks like a text file)
+  light weight
+  easily read and understandble for only the developers
+  they also have data types
+  Key values pair - it uses double codes(""); ex- {}"name" : "abcd"}
+  file extension  .html .css .js .json
+    -->
+    <script>
+        var mobiles = { mobile : "iphone"} // object.
+        var jsonmobiles = {"mobile" : "iphone"}  // json object
+       // console.log(mobiles.mobile); // iphone
+       // console.log(jsonmobile.mobile);
+
+        // we need to convert Json - Response - Object //parse
+        // We need to convert object data - Jsondata //stringify
+        console.log(mobiles);
+        mobiles = JSON.stringify(mobiles); //  IMP how u send the data in to server - by converting in to json format
+                                           // how u convert it means by using stringify method
+  console.log(mobiles);
+  // how to convert json data into object - by using parse method.
+    </script>
+</body>
+</html>

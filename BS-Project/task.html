@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <title>Wah-Shop</title> </title>
+</head>
+<body>
+    <!--Nav-Bar-->
+
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark " style="height:70px;">
+        <div class="container-fluid">
+        <!--LOGO-->
+        <a class="navbar-brand" href="#">Wah Shop!</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button> 
+        <div class="input-group" style="width:450px;">
+            <input type="search" class="form-control" placeholder="Find Your Favourites..." style="width:150px;"/>
+            <button class="btn btn-dark" type="submit">Search</button>
+        </div>
+        
+        <!--Navbar - Menu-->
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ">
+                <li class="nav-item ">
+                    <a class="nav-link " href="#"  style="margin-left:20px;">Men</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="margin-left:20px;">Women</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="margin-left:20px;">Kids</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="margin-left:20px;">Home-Decors</a>
+                </li>
+                
+            </ul>
+        </div>
+        <!--Popup Model-->
+     <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#login">Login</button>
+    <div class="modal" id="login">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p>Enter Your Details</p>
+                </div>
+                <div class="modal-body">
+                    <form class="was-validated">
+                        <div class="row">
+                            <div class="col">
+                                <lable class="form-label">Username</lable>
+                                <input type="text" class="form-control" id="user" placeholder="Username" required/>
+                                <div class="valid-feedback">Wahhh User</div>
+                            <div class="invalid-feedback">Awww! No User</div>
+                            </div>
+                            
+            
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <lable class="form-label">Password</lable>
+                                <input type="text" class="form-control" id="user" placeholder="Password" required/>
+                                <div class="valid-feedback">Wahhh password</div>
+                                <div class="invalid-feedback">Awww! No password</div>
+                            </div>
+                            
+            
+                        </div>
+                        <div class="row">
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Login</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    </nav>
+    <!--banner-->
+    <div class="row mt-3" style="height:200px;">
+        <div class="col-8 bg-success " style="width:90%;"></div>
+        <div class="col-4 bg-warning" style="width:10%;"></div>
+    </div>
+    <!--div-list -->
+    <h2 style="color: rgb(13, 116, 94);margin-left: 20px;">Top Brands</h2>
+    <div class="row mt-0" style="height:200px;margin-left: 50px;">
+        
+        <div class="col-4 bg-primary" style="width:200px;margin-left: 50px;">
+            <p>Hello</p>
+        </div>
+        <div class="col-4 bg-danger" style="width:200px;margin-left: 50px;">
+            <p>Hello</p>
+        </div>
+        <div class="col-4 bg-warning" style="width:200px;margin-left: 50px;">
+            <p>Hello</p>
+        </div>
+    </div>
+   
+
+</body>
+</html>

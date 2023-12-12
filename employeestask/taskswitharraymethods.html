@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+     <!--
+        Employe management.
+         1) I want see all employes in my company.
+         2) I want see all female Employes.
+         3) I want see all male Employes.
+         4) I want see - who is Seniour EMp in my company.
+         5) I want see - who is Junir EMp in my company.
+         6) I want see - who is taking Height Salary.
+         7) I want see - who is taling lowest Salry.
+         8) I want a list of employees - Whos role is team lead.
+         9) I want a list of employees - Whos role is Product Manager.
+         10) I want check - Total Amount the i Paying in a Month.
+         11) I add New Employe.
+         12) I want remove my company.
+         13) I want to make incriment to all employes.
+         14) I want to make incriment to patriculr employe.
+         15) I want sort all EMplye by Asseding order.
+         16) I want sort all EMplye by Decensing order.
+         17) I want sort all EMplye by Based on there Salary - Low to heigh.
+         18) I want sort all EMplye by Based on there Salary - High to Low.
+         19) I want to search employe by Name/Id.
+         20) Check the attadance.
+         21) Active/incative employe
+
+         Test Data (Full Name, EMp ID, Doj, Salary, Role(Recepition, Mangaer, TeamLead, Assosiate, officeboy), mobile number, Emp Status, Gender, age, TravelStatus(Won, cab), Health Insurance(Yes/no) ).
+    -->
+    
+    <div class="container mt-5 ">
+        <!--All employees-->
+        <div class="row mt-3">
+            <div class="col-8 bg-danger rounded-2">
+                <h3 class="text-white"> Display all Employees</h3>
+            </div>
+            <div class="col-4">
+                <button class = "btn btn-success"  onclick = "allEmployees()">Click Here </button>
+            </div>
+        </div>
+         <!-- All Female Employees-->
+        <div class="row mt-3">
+            <div class="col-8 bg-danger rounded-2">
+                <h3 class="text-white"> Display all Female Employees</h3>
+            </div>
+            <div class="col-4">
+                <button class = "btn btn-success"  onclick = "allFemaleEmployees()">Click Here </button>
+            </div>
+        </div>
+        <!-- All Male EMployees-->
+        <div class="row mt-3">
+            <div class="col-8 bg-danger rounded-2">
+                <h3 class="text-white"> Display all Male Employees</h3>
+            </div>
+            <div class="col-4">
+                <button class = "btn btn-success"  onclick = "allMaleEmployees()">Click Here </button>
+            </div>
+        </div>
+        <!-- All senior Employees-->
+        <div class="row mt-3">
+            <div class="col-8 bg-danger rounded-2">
+                <h3 class="text-white"> Display all Senior Employees</h3>
+            </div>
+            <div class="col-4">
+                <button class = "btn btn-success"  onclick = "allsenioremployees()">Click Here </button>
+            </div>
+        </div>
+        <!-- All Junior Employees-->
+        <div class="row mt-3">
+            <div class="col-8 bg-danger rounded-2">
+                <h3 class="text-white"> Display all Junior Employees</h3>
+            </div>
+            <div class="col-4">
+                <button class = "btn btn-success"  onclick = "alljunioremployees()">Click Here </button>
+            </div>
+        </div>
+        <!-- All Team Lead-->
+        <div class="row mt-3">
+            <div class="col-8 bg-danger rounded-2">
+                <h3 class="text-white"> All Team Lead</h3>
+            </div>
+            <div class="col-4">
+                <button class = "btn btn-success"  onclick = "allteamlead()">Click Here </button>
+            </div>
+        </div>
+        <!-- All Managers-->
+        <div class="row mt-3">
+            <div class="col-8 bg-danger rounded-2">
+                <h3 class="text-white"> All Managers</h3>
+            </div>
+            <div class="col-4">
+                <button class = "btn btn-success"  onclick = "allmanagers()">Click Here </button>
+            </div>
+        </div>
+        <!-- Add Employee-->
+        <div class="row mt-3">
+            <div class="col-8 bg-danger rounded-2">
+                <h3 class="text-white"> AddEmployee</h3>
+            </div>
+            <div class="col-4">
+                <button class = "btn btn-success"  onclick = "addemployee()">Click Here </button>
+            </div>
+        </div>
+        <!-- Remove Employee-->
+        <div class="row mt-3">
+            <div class="col-8 bg-danger rounded-2">
+                <h3 class="text-white"> Remove Employee</h3>
+            </div>
+            <div class="col-4">
+                <button class = "btn btn-success"  onclick = "removeemployee()">Click Here </button>
+            </div>
+        </div>
+        <!-- Inactive Employees-->
+        <div class="row mt-3">
+            <div class="col-8 bg-danger rounded-2">
+                <h3 class="text-white"> Display Inactive Employees</h3>
+            </div>
+            <div class="col-4">
+                <button class = "btn btn-success"  onclick = "inactiveemployees()">Click Here </button>
+            </div>
+        </div>
+        </div>
+    <script>
+    const employeesData = [ 
+    {
+name: "Manohar Lotlapalli",  empId: 1201 ,  doj: "12-08-2013",  salary: 30000, role: 'Office Boy', 
+empstatus: true, gender: 'male', age : 35, },
+{ 
+name: "Basheer",  empId: 1202 ,  doj: "25-11-2023", salary: 80000, role: 'Team Lead', empstatus: true, 
+gender: 'male', age : 26, },  
+{ 
+name: "Satish", empId: 1203, doj: "10-08-2014",salary: 85000, role: 'Manager', empstatus: true, 
+gender: 'male', age : 28, },
+{  
+name: "Kalyani", empId: 1204, doj: "20-06-2017", salary: 30000, role: 'Assosiate', empstatus: true, 
+gender: 'female', age : 24, },
+{  
+name: "Nandini", empId: 1205, doj: "10-04-2019", salary: 80000, role: 'Team Lead', empstatus: true, 
+gender: 'female', age : 23, },
+{  
+name: "Suresh", empId: 1206, doj: "11-05-2019", salary: 80000, role: 'Team Lead', empstatus: true, 
+gender: 'male', age : 25, },
+{  
+name: "Sravanthi", empId: 1207, doj: "21-07-2015", salary: 30000, role: 'Assosiate', empstatus: true, 
+gender: 'female', age : 21, },
+{  
+name: "Rajkumar",  empId: 1208,  doj: "15-02-2018",  salary: 60000, role: 'Team Lead', empstatus: false, 
+gender: 'male', age : 24, },
+{  
+name: "Swapna", empId: 1209, doj: "13-09-2014", salary: 70000, role: 'HR', empstatus: true, 
+gender: 'female', age : 30, },
+{  
+name: "Rajeswari", empId: 1210, doj: "23-05-2011", salary: 20000,  role: 'Receptionist', empstatus: true, 
+gender: 'female', age : 30, },
+{
+name: "Prasad", empId: 1211, doj: "05-09-2018", salary: 85000,  role: 'Manager', empstatus: true, 
+gender: 'male', age : 32, },
+{  
+name: "Nagulmeera", empId: 1212, doj: "13-03-2014", salary: 80000, role: 'Team Lead', empstatus: true, 
+gender: 'male', age : 25, },
+{  
+name: "Bhargav", empId: 1213, doj: "22-01-2019", salary: 30000, role: 'Assosiate', empstatus: true, 
+gender: 'male', age : 23, },
+{  
+name: "Suryakumar", empId: 1214, doj: "22-01-2019", salary: 85000, role: 'Manager', empstatus: true, 
+gender: 'male', age : 27, },
+{  
+name: "Pooja", empId: 1215, doj: "10-12-2014", salary: 70000, role: 'HR', empstatus: false, gender: 'female', age : 25, },
+{  
+name: "Varun", empId: 1216, doj: "04-09-2020", salary: 30000, role: 'Assosiate', empstatus: false, gender: 'male', age : 21, },
+{  
+name: "Srikanth", empId: 1217, doj: "18-03-2011", salary: 100000, role: 'Manager', empstatus: false,  gender: 'male', age : 35, },
+{  
+name: "Ankitha", empId: 1218,  doj: "14-01-2021", salary: 30000, role: 'Assosiate', empstatus: true, gender: 'female', age : 21, }, 
+{  
+name: "Kiran", empId: 1219, doj: "04-09-2020", salary: 80000, role: 'Team Lead', empstatus: false,  gender: 'male', age : 23, },
+{  
+name: "Vinay", empId: 1220, doj: "13-08-2021", salary: 85000,  role: 'Manager',  empstatus: false, gender: 'male', age : 33, },
+
+];
+
+// ALL Employees
+function allEmployees() {
+const allemployees = employeesData.map((emp)=>{
+    return emp.name;
+});
+console.log(allemployees);
+}
+
+//All Female Employees
+function allFemaleEmployees(){
+const femaleemployees = employeesData.filter((emp)=>{
+return emp.gender =='female';
+});
+console.log(femaleemployees); 
+}
+
+// ALL Male Employees
+function allMaleEmployees() {
+const maleemployees = employeesData.filter((emp)=>{
+return emp.gender =='male';
+});
+console.log(maleemployees); 
+}
+
+// Who is senior Employee
+function allsenioremployees(){
+const senioremployees = employeesData.filter((emp)=>{
+return emp.age > 30;
+});
+console.log(senioremployees); 
+}
+
+// Who isJuniorEmployee
+function alljunioremployees(){
+const junioremployees = employeesData.filter((emp)=>{
+return emp.age < 25;
+});
+console.log(junioremployees); 
+}
+
+// Whose role is Team Lead
+function  allteamlead(){
+const employees = employeesData.filter((emp)=>{
+return emp.role =='Team Lead'; // compulsory we have to give == here
+});
+console.log(employees); 
+}
+
+// Whose role is Manager
+function allmanagers(){
+const  cemployees = employeesData.filter((emp)=>{
+return emp.role =='Manager'; // compulsory we have to give == here
+});
+console.log(cemployees);
+} 
+
+// Add  New Employee
+function addemployee(){
+  employeesData.push("guru");
+ console.log(employeesData);
+}
+
+ // Remove Employee
+ function removeemployee(){
+ employeesData.pop("guru");
+ console.log(employeesData);
+ }
+//  // Inactive Employees
+//  function inactiveemployees(){
+// const  cemployees = employeesData.filter((x)=>{
+// return x.empstatus =='false'; // compulsory we have to give == here
+// });
+// console.log(cemployees);
+// } 
+
+// // Increment to All Employees
+// function addincrement(){
+//         const amount = document.getElementById("incrementamount").value; // input value ivvali antay document.get anaydhi use cheyali
+//         const updatedsalary = employeesData.map((sal)=>{
+//             return sal + Number(amount);
+//         });
+//         console.log(updatedsalary);
+        
+//      }
+
+//      // sorting
+//      const sorrtthevalue = employeesData.sort();
+//  console.log(sorrtthevalue);
+
+
+
+
+</script>
+</body>
+</html>

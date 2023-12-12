@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+    <button class="btn btn-warning mt-3" onclick="showmoviename()"> Movie</button>
+    <span class="bg-primary" id="moviedetails"></span>
+    <button class="btn btn-success mt-3" onclick="selectseats()"> Book seats</button>
+    <span class = " bg-primary" id="showseats"></span>
+    <button class=" btn btn-danger mt-3 ml-3" onclick="payAmount()"> payment</button>
+    <span class="bg-success" id="paymoney"></span>
+    <select class="form-select mt-3" onchange="selectseats()">
+        <option> 1</option>
+        <option> 2</option>
+    </select>
+    
+    </div>
+    
+    <script>
+        // SHOW MOVIE DETAILS
+        function  showmoviename() {
+            var  movie_name = "jailer";
+            var time = "02:30PM";
+            var price = 100;
+            console.log(movie_name, time, price);
+            document.getElementById("moviedetails").innerHTML = "Jailer 02:30PM 100";
+             }
+             // SELECT SEATS
+             function selectseats() {
+                var seats = 3;
+                console.log(seats);
+                document.getElementById("showseats").innerHTML = seats;
+
+             }
+             // PAY AMOUNT
+             function payAmount(){
+                var price = 100;
+
+                var seats = 3;
+                var pay = price*seats;
+                console.log(pay);
+                document.getElementById("paymoney").innerHTML = pay;
+             }
+      
+       
+       
+    </script>
+</body>
+</html>

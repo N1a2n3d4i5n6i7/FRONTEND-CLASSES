@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // let declares but canot redeclares
+        // Block Level Scope means only in the {}
+        // Reassign possible
+          let movies1 = "leo";
+         let movies2 = "vikram"; 
+         console.log(movies1) ; 
+
+        
+        {
+            let citiname = "hyd";
+
+        }
+ // console.log(citiname); // output is error bcz it is ouside of {}
+
+  // Add cart
+  let user1cart = [10,11,12,13];
+ { 
+  let user1cart = [1,2,3,4];
+ }
+    {
+        let user1cart = [5,6,7,8];
+    }
+    console.log(user1cart); // here the ouput is 10,11,12,13 bcz the other ones are in the block .{}
+// Re assign
+    let cars = ['a','b','c','d'];
+         cars = ['e','f','g','h'];
+         console.log(cars); // output   is  e,f,g,,h 
+    </script>
+</body>
+</html>

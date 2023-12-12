@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <title>BS-Pagination-Dropdown-Popup</title>
+</head>
+<body>
+    <!--Pagination --- Display Pages-->
+    <div class="container mt-3">
+        <ul class="pagination ">
+            <li class="page-item">
+                <a class="page-link active" href="#">Previous</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link text-danger" href="#">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+
+    <!--Dropdwon-->
+    <div class="dropdown">
+        <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">Choose Your Favourite</button>
+        <div class="dropdown-menu">
+            <li><a class="dropdown-item ">Major</a></li>
+            <li><a class="dropdown-item">Jailer</a></li>
+            <li><a class="dropdown-item">Vikram</a></li>
+
+        </div>
+    </div>
+
+    <!--Popup-->
+
+    <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#movie-modal">Display Movie Content</button>
+    <div class="modal" id="movie-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header starts here-->
+                <div class="modal-header">
+                    <p>Movie Name - Major</p>
+                </div>
+                <!-- Modal body starts here-->
+                <div class="modal-body">
+                    <table class="table table-bordered mt-3 ">
+                        <tr>
+                            <th>Movie Name</th>
+                            <th>Director</th>
+                            <th>Hero</th>
+                        </tr>
+                        <tr>
+                            <td>kushi</td>
+                            <td>shivaniravana</td>
+                            <td>vijay</td>
+                        </tr>
+                        <tr>
+                            <td>Rajarani</td>
+                            <td>Atlee</td>
+                            <td>Arya</td>
+                            
+                        </tr>
+                    </table>
+
+                   </div>
+                   <!-- Modal Footer starts here-->
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<!-- Forms
+  text- form-control-
+  select-form-select
+  radio/check- form-check-input
+-->
+<body>
+    <div class="container">
+ <form action="savedata.php" method="get">
+    <input type="text" id="username" class="form-control mt-3" placeholder="Enter your name">
+    <input type="email" id="username" class="form-control mt-3" placeholder="Enter your email" >
+    <input type=" password" id="username"class="form-control mt-3" placeholder="Enter your password">
+     <input type="number" id="number" class="form-control mt-3" placeholder="Enter your phone number">
+    
+    <p>
+        Gender:
+         <input type="radio" id="username" class="form-check-input mt-3" gender name="subject">
+         
+    Female <input type="radio" id="username" class="form-check-input mt-3" gender name="subject">
+        Other <input type="radio" id="username" class="form-check-input mt-3" gender name="subject">
+        </p>
+        <select class="form-select mt-3">
+            <option> select language</option>
+            <option> Telugu </option>
+            <option> English </option>
+            <option> Tamil </option>
+        </select>
+        <textarea class="form-control mt-3"></textarea>
+        <button type="button" class="btn btn-success mt-3"> Register</button>
+</form>
+</div>
+</body>
+</html>
+    
+
+
+
+
+

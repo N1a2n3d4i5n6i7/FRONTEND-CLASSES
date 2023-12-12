@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var can declare and redeclare
+        
+        // global scope - it can access anywhere in the page , outside of the {}
+        //reassign the values
+        var movies = "leo";
+        var movies = "vikram";  
+        console.log(movies); //here the output is vikram..bcz it overides
+// scope
+        {
+            var citiname = "hyd";
+
+        }
+  console.log(citiname); // output is hyd
+  // Add to car
+  var user1cart = [10,11,12,13]
+ { 
+  var user1cart = [1,2,3,4];
+ }
+    {
+        var user1cart = [5,6,7,8];
+    }
+    console.log(user1cart); // here the ouput is 5,6,7,8 bcz it overides
+
+    // Re assign 
+
+    var cars = ['a','b','c','d'];
+         cars = ['e','f','g','h'];
+         console.log(cars); // output is e,f,g,h
+    </script>
+</body>
+</html>

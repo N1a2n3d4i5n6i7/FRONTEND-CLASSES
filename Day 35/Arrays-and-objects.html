@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><!-- task-->
+    <input type="text" value="" id="stu">
+    <input type="button" value="addstudent" onclick="addnewstudent()">
+
+
+    <!-- Arrays..Positions and lengths-->
+    <script>
+    var movie1 = "jawan";
+    var movie2 = "kushi";
+    var movie3 = "jailer";
+    var movie4 = "shetty";
+
+    // Array
+    var movies = [ "jawan", "kushi","jailer","shetty"];
+    console.log("movoies");
+    // kushi output
+    movies[1]; // kushi
+    movies[0]; // jawan
+    console.log(movies[0]);
+
+    var mydeatils = ["nandu",96578,true,9.9];
+    console.log(mydeatils[3]);//9.9 is output
+
+    // length
+    movies.length;
+
+    // add new element to array
+
+    movies.push("mark antony");
+    console.log(movies);
+
+    // tasks..to add students 
+var allstudents = [];
+ function addnewstudent(){
+    var newstudent = document.getElementById("stu").value;
+    allstudents.push(newstudent);
+    console.log(allstudents);
+ }
+
+
+</script>
+</body>
+</html>

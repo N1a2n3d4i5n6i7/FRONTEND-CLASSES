@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+.header{
+    background-color: rgb(5,25,5);
+    font-size: larger;
+    padding: 10px;
+    text-align: center;
+    color:white;
+}
+.nav{
+    background-color: violet;
+}
+.section{
+    height: 150px;
+}
+    .article{
+        height: 50px;
+      }
+      .article li{
+        list-style-type: none;
+        padding: 10px;
+        float: left;
+      }
+    .footer{
+        background-color: rgb(5,25,5);
+        padding: 10px;
+        height: 80px;
+        text-align: left;
+        }
+    .footer li {
+    list-style-type: none;
+    padding: 10px;
+    float: left;
+    }
+    @media screen and (max-width: 600px) {
+        .section,.article {
+        width: 100%;
+        }
+        }

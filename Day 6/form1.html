@@ -1,0 +1,35 @@
+<html>
+    <head> 
+        <title> Application Form1 </title>
+    </head>
+    <body>
+        <form>
+        <style>
+            body {
+                background-color: crimson;
+            }
+        </style>
+        <form action="savedata.php" method="get"></form>
+        <p>Name : <input type="text"></p>
+        <p>Email : <input type="email"></p>
+        <p>password : <input type ="password"> </p>
+        <p>Phone Number : <input type="text"></p>
+        <p>
+            Gender:
+            Male <input type="radio" name="gender">
+            Female <input type="radio" name="gender">
+            other <input type="radio" name="gender">
+        </p>
+        <p>language : <select>
+            <option> select language </option>
+            <option> Telugu </option>
+            <option> English </option>
+            <option> Hindi </option>  <!-- these are for dropdowns-->
+            <option> Tamil </option>
+        </select></p>
+        <p>Zip code : <input type="text"> </p>
+        <p> About : <textarea rows="10" cols="30"> </textarea></p>
+        <p> <input type="button" value ="Register"></p>
+        </form>
+    </body>
+</html>

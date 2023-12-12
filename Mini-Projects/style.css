@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header {
+    height: 60px;    
+    width: 100%;
+    background-color: #FB6542;
+    
+}
+.header h1 {
+    float: left;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+.header h2 {
+    font-size: 1.3rem;
+    color: white;
+    padding: 15px;
+    float: right;
+    cursor: pointer;
+}
+.nav {
+    float: left;
+    font-size: 1.2rem;
+    padding: 10px;
+    font-weight: 100;    
+}
+.nav ul {
+    list-style-type: none;
+}
+.nav ul li {
+    margin: 20px;
+}
+.nav ul li a{
+    color: blue;
+    text-decoration: none;
+}
+.list{
+    margin: 25px 200px 0px 200px;
+    float: left;
+}
+.list h1 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+.list h3 {
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin: 55px 0px 0px 20px;
+}
+.list p{
+    font-weight: 100;
+    font-size: 1.3rem;
+    margin: 10px 0px 0px 20px;
+}
+.list1{
+    font-weight: 100;
+    margin: 140px 0px 0px 365px;
+   
+}
+.list1 h3{
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin: 5px 0px 0px 20px;
+}
+.list1 p{
+    font-weight: 100;
+    font-size: 1.3rem;
+    margin: 10px 0px 0px 20px;
+}
+.list2 {
+    margin: 55px 0px 0px -20px;
+    float: left;
+}
+.list3 {
+    margin: 60px 0px 0px 285px;
+    float: left;
+}
+.tab {
+    
+    margin: 155px 0px 0px 345px;
+}
+ .tab table{
+   
+   border-collapse: collapse;
+}
+.tab td, th{
+   
+   height: 50px;
+   font-size: 1.2rem;
+   border: 1px solid rgb(192, 190, 190);
+   padding: 5px;
+   width: 180px;
+   margin: 15px;
+}
+tr{
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+}
+tr:nth-child(even){
+    background-color:rgb(226, 222, 222) ;
+}
+
+
+
+
+
+

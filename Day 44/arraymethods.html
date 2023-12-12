@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Array Methods
+     1.concat - (concating(joining) two or more numbers)
+     2. Push - Adding new elements to the array
+    3.pop - removing the last element in a array
+    4.shift - to remove the forst element of an array
+    5.unshift - it will add one or more element to the beginning of an array
+    6.Splice - adding elements to the particular position 
+    7.Slice - return a copy of portion of array
+    8.Indexof - it gives the position of an element in the array.
+    9.LastIndexof - it gives the position of element from the last
+    10.Includes - it will tell whether the value in a array is exiting or not
+    11.Reverse - prints reverse the array
+    12.sort - it gives the elements in the correct order
+    -->
+
+    <script>
+        // CONCAT
+        const arra1 =[1,2,3];
+        const arra2 =[4,5,6];
+        const arra3 =[7,8,9];// output should come in [1,2,3,4,5,6,7,8,9]
+        const concatearray = arra1.concat(arra2,arra3);
+        console.log(concatearray);
+
+        // PUSH
+        const cars =["tesla","BMW","AUDI"]; // output should come like ["tesla","BMW","AUDI","Honda"]
+         cars.push("Honda");
+         console.log(cars);
+
+         //POP 
+         const arra5 = [4,5,6,7,8]; // ouput should be like [4,5,6,7]
+         arra5.pop();
+         console.log(arra5);
+
+         // Shift
+         const arra6 = [10,20,30,40,50]; // output should be [20,30,40,50]
+         arra6.shift();
+         console.log(arra6);
+
+         //unshift
+         const arra7 =[2,3,4,5]; // output should be [0,1,2,3,4,5]
+         arra7.unshift(0,1);
+         console.log(arra7);
+
+        //Splice
+        // It has  3 Arguements 1)position where u want to add the elements
+        //                      2) how many elements u want to delete
+        //                       3) new elements to  be added
+        const arra8 = [1,2,3,4,5]; ;// output should be  [1,2,a,b,4,5]
+        arra8.splice(2,1,'a','b'); // here 2 is the position and 1 is the how many elements we have to delete
+        console.log(arra8);
+
+        //slice
+        const arra9 = [1,2,3,4,5,6]; //output should be[3,4]
+        const slicedarray = arra9.slice(2,4);
+        console.log(slicedarray);  
+
+        // forEach
+        const myvalues = [1,2,3,4,5];
+    myvalues.forEach(function( num){
+        console.log(num); // doudt why we r excuting num in console.log
+    })
+
+    // Indexof
+    const arra10 =[1,2,3,4,5,6,7,8];
+    const positionindex= arra10.indexOf(7); // here the output is 6
+    console.log(positionindex);
+
+// LastIndexof
+const arra11 = [1,2,3,4,5,6,7];
+ const Positionlastindexof = arra11.lastIndexOf(6); // ouput is 2
+ console.log(Positionlastindexof); //wrong output is  coming 
+
+ // Includes
+ const arra12 = [4,8,99,66,54,34];
+ const checkthevalue = arra12.includes(34);
+ console.log(checkthevalue);
+
+ // Reverse
+ const arra13 = [4,3,6,7,8,9];
+ const reversethearray = arra13.reverse();
+ console.log(reversethearray);
+
+ //sort
+ const arra14 = ['a','c','e','g','b','d','h'];
+ const sorrtthevalue = arra14.sort();
+ console.log(sorrtthevalue);
+
+ //isArray
+ const arra15 = "abc";
+ const checkarray = Array.isArray(arra15);
+ console.log(checkarray);
+
+    
+
+
+
+
+
+
+
+
+        
+    </script>
+</body>
+</html>

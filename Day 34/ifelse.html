@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditions</title>
+</head>
+<body>
+    <!-- conditional statement
+    if ticket available 10am(ac) -will book(con1) if()
+     if not -book11am(sleeper)(con2)--elseif()
+    no book available--will go by general ..else()-->
+    <script>
+       // Requirement- if totalmarks <35 (u r fail),
+                          // totalmarks>35 and <50 (" u just passed") 
+                          // totalmarks < 50 and 80 (" u r passed in 2nd grade") 
+                          // totalmarks <80 and 100 (" u r passed with outstnding")
+      // And(&&) or(||) not(!)                  
+       
+         var final_results = 81;
+
+         if(final_results < 35){
+            console.log("u are fail");
+         } else if( final_results >= 35 && final_results <= 50) {
+            console.log("u just passed");
+         }else if( final_results >50 && final_results <= 80){
+            console.log("u r passed in 2nd grade");
+         }
+            else {
+                console.log("u r passed with outstanding");
+            }
+         
+    </script>
+    
+</body>
+</html>

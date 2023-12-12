@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+<body>
+    <!--
+        object - home, class, school,movies 
+        property value- color:blue..here color is a property and blue is the value
+        functions/methods
+    -->
+    <script>
+        // how to create a object
+        var movie = { name : "kushi" , hero : "vijay", director : "shiva", price : 15 };
+         var tv = { size : "56inch", price : 15000, color : "black"};
+
+         // how to read a object 
+         // we have to write objectname.property name
+         console.log(movie.hero);
+
+
+         // can we put all objects into single array? yes
+        // we have to write like this
+
+        var myCart = [
+                  { name : "kushi" , hero : "vijay", director : "shiva", price : 15  },
+                  { size : "56inch", price : 15000, color : "black"}
+                 ]
+// console.log(mycart); 
+//console.log(mycart.length);
+console.log(myCart[0]);  // gives first row results
+console.log(myCart[1].color); // gives black output
+
+
+// what will be the grand total og myCart price?
+//For loop
+// 1. initilization
+  // 2.condition
+  //3. Direction
+  // i=1;
+  //1<5
+  
+for (i=0;i<5;i++){
+    console.log(i);
+}
+
+
+
+    </script>
+</body>
+
+</html>

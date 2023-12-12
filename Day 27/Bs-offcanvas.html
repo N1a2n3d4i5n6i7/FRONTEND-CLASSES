@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offcanvas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- offcanvas-top this will give menubar on the top--
+   offcanvas-bottom this will give menubar on the bottom--
+offcanvas-start this will give menubar on the left side -->
+    <div class="offcanvas offcanvas-end" id="mycanvas">
+ <div class="offcanvas-header">
+    <h1> Menu</h1>
+</div>
+<div class="offcanvas-body">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+             <a class="nav-link" href="#"> Home </a>
+        </li>
+        <li class="nav-item">
+             <a class="nav-link"  href="#"> Contact </a>
+        </li>
+        <li class="nav-item"> 
+             <a class="nav-link" href="#"> About </a>
+        </li>
+        <li class="nav-item">
+             <a class="nav-link" href="#"> Services </a>
+        </li>
+    </ul>
+    </div>
+    </div>
+    <div class="container-fluid">
+        <button class=" btn btn-success" data-bs-toggle="offcanvas" data-bs-target="#mycanvas"> Open </button>
+      </div>
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+<body>
+    <!--
+        objects
+        -> how to create objects, how to access
+        -> property and value ().
+        -> Adding new value  to existing object
+        -> for-in (for loop) method objects
+        -> delete object values.
+        -> nested objects and how to access?.
+        -> constructers.
+        -> prototypein objects.
+        -> This Keyword and return keyword
+        -> Foreac, for in, Map, call, filter, reduce
+    -->
+    
+    <script>
+        function fun_name(){
+            console.log("hello"); // old way of writing functiins
+        }
+        let fun_name2 = (par1, par2) => {
+            console.log(par1); // new way of writing functions
+        }
+        fun_name()// 
+        fun_name2();
+
+     let phone = { mode:"iphone15", color: "green", price:80000, available:true}; // creating the object
+     // object is phone, property is mode, value is iphone15
+        phone.version = 6.7;  // Adding new values
+        delete phone.color; // deleting the object values
+     console.log(phone);
+// for in
+//for(let i = 0;i<=12,i++){
+
+//}
+for(let x in phone){ // here x is the property and values of phone 
+    console.log(x)
+}
+// Nested Objects
+  let Mydata = [{
+    name : "Nandini",
+    mobile : 78695,
+    work : "software employee",
+    cars : {
+        car1 : "Honda",
+        car2 : "Tesla",
+        car3 : "BMW",
+        bikes :{
+            bike1 : "activa",
+            bike2 : "royal",
+        }
+    }
+    }];
+    // get nested object values
+    Mydata.cars.car1; // ouput is honda
+    Mydata.cars.bikes.bike1;
+
+  
+
+ 
+    </script>
+</body>
+</html>
+

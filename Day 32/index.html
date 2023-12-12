@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function-Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+    <button class="btn btn-success mt-3" onclick="doaddition()"> submit</button>
+    <button class="btn btn-primary mt-3" onclick="printmyname()"> submit</button>
+    <button class="btn btn-warning mt-3" onclick="printmobilenumber()"> print</button>
+    <span class="bg-success" id="showmynumber"></span>
+     <select class="form-select" onchange="printmyname()">
+        <option value="1"> one </option>
+        <option value="2"> two </option>
+
+     </select>
+    </div>
+    <script>
+        function printmyname(){
+            console.log("nandini");
+
+        }
+        function  printmobilenumber() {
+            var mobile = 2018556558
+            console.log(mobile);
+            document.getElementById("showmynumber").innerHTML = mobile;
+            
+        }
+        function doaddition(){
+            var a=2
+            var b= 4
+            var c = a+b
+            console.log(c);
+        }
+        function numberoftickets(){
+           var numberofseats = 3
+           console.log(numberofseats);
+
+        }
+        function finalpayment(){
+            var paymentdetails = { payment : "creditcard", cardnumber : 1234567898989 ,cvv : 234 }
+            console.log(finalpayment);
+        }
+        printmyname();
+        printmobilenumber();
+        doaddition();
+        numberoftickets();
+       
+    </script>
+</body>
+</html>

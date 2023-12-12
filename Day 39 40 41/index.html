@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <!-- 
+        Return
+        This
+        Object methods
+        Array forEach
+        Array Map
+        Array Filter
+        Array Reduce
+     -->
+     <script>
+        function addnumbers(a,b){
+            console.log(a+b);
+        }
+             addnumbers(2,3);
+/////////////////////////////////////////////////
+             function subnumbers(x,y) {
+                return x  - y;
+             }
+                var output = subnumbers(20,10) ;
+                console.log(output);
+            
+             ////////// Now by using object 
+
+             function mykids(dau1,dau2){
+                return { firstdaug1 : dau1, secdau2 : dau2}
+             }
+             const result = mykids("Lukthi","Hanvi" );
+             console.log(result);
+             // ANother example by using object
+
+            function createbike (name, price) {
+                return { bikename:name, bikeprice:price};
+              }
+              const result2 = createbike("Activa",90000);
+              console.log(result2);
+
+              // i want to display mybikename using functions
+              const mybike = { bike:"royal enf",price :15000};
+              function displaybike(disbike){
+               console.log(disbike.bike);
+              }
+              displaybike(mybike);
+
+              // now the sameoutput by using return
+             const mybike1 = { bike:"royal enf1",price :15000};
+              function displaybike(disbike){
+             return(disbike.bike);
+              }
+              var resultbike = displaybike(mybike1);
+               console.log(resultbike);
+            // Another example by using function
+            const myfood = { item1:"biryani",price:500}; // i want to display biryani 
+            function orderfood(disfood){
+               console.log(disfood.item1);
+            }
+            orderfood(myfood);
+
+           //const yourbike1 = { bike:"royal enf2",price :15000};
+            //const yourbike2 = { bike1:"splender",price :80000};
+            //function displaybike(disbike,disbike1){
+               //console.log(disbike.bike,disbike1.bike1);
+            //}
+            //displaybike(yourbike1,yourbike2);
+            
+     </script>
+</body>
+</html>

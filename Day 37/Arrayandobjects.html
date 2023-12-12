@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays-and-Objects</title>
+</head>
+<body>
+    <!--
+        Employe management.
+         1) I want see all employes in my company.
+         2) I want see all female Employes.
+         3) I want see all male Employes.
+         4) I want see - who is Seniour EMp in my company.
+         5) I want see - who is Junir EMp in my company.
+         6) I want see - who is taking Height Salary.
+         7) I want see - who is taling lowest Salry.
+         8) I want a list of employees - Whos role is frontEnd developer.
+         9) I want a list of employees - Whos role is Product Manager.
+         10) I want check - Total Amount the i Paying in a Month.
+         11) I add New Employe.
+         12) I want remove my company.
+         13) I want to make incriment to all employes.
+         14) I want to make incriment to patriculr employe.
+         15) I want sort all EMplye by Asseding order.
+         16) I want sort all EMplye by Decensing order.
+         17) I want sort all EMplye by Based on theor Salary - Low to heigh.
+         18) I want sort all EMplye by Based on theor Salary - High to Low.
+         19) I want to search employe by Name/Id.
+         20) Check the attadance.
+         21) Active/incative employe
+
+         Test Data (Full Name, EMp ID, Doj, Salary, Role(Recepition, Mangaer, TeamLead, Assosiate, officeboy), mobile number, Emp Status, Gender, age, TravelStatus(Won, cab), Health Insurance(Yes/no) ).
+    -->
+     <script>
+      var employeesData = [
+      { 
+        name: "Manohar Lotlapalli2",
+        empId: 4612457,
+        doj: "12-08-2013",
+        salary: 450300,
+        role: 'Office Boy',
+        empstatus: true,
+        geder: 'male'
+    },
+    { 
+        name: "Basheer",
+        empId: 4612458,
+        doj: "12-08-2013",
+        salary: 450300,
+        role: 'Office Boy',
+        mobile: 9554234524,
+        empstatus: true,
+        geder: 'male'
+    }, 
+    { 
+        name: "Satish",
+        empId: 4612456,
+        doj: "12-08-2013",
+        salary: 450300,
+        role: 'Office Boy',
+        mobile: 9554234524,
+        empstatus: true,
+        geder: 'male',
+    },
+    { 
+        name: "Kalyani",
+        empId: 4612456,
+        doj: "12-08-2013",
+        salary: 45000,
+        role: 'Office Boy',
+        mobile: 9554234524,
+        empstatus: true,
+        geder: 'female'
+    }
+      ];
+
+      var myarraylength = employeesData.length;
+
+   //   console.log(employeesData[0]);
+     // console.log(employeesData[1]);
+    //  console.log(employeesData[2]);
+       // Increment and Decrement OPerators
+
+    //    var a = 2;
+    //    a--;
+    //    console.log(a);
+
+      for( let i = 0; i < myarraylength; i++ ) {
+          //console.log(i);
+          // I wi;; write If condition - emadata=.gender == male -> console.log
+          if(employeesData[i].gender == "male") {
+            console.log((employeesData[i].name));
+          }
+         // console.log((employeesData[i].salary));
+          
+      }
+
+      function AddEmploye() {
+        var empname = document.getAnimations.apply
+
+        var newEmpObj = { name : empname,  };
+        employeesData.push(newEmpObj);
+
+
+      }
+
+     </script>
+</body>
+</html>

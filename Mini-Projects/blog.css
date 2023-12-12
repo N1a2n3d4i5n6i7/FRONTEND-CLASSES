@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #181D31;
+}
+.header {
+    background-color: #FB6542;
+    width: 100%;
+    height: 60px;
+}
+.header h1{
+    float: left;
+    color: white;
+    margin: 15px 0px 0px 15px;
+    font-size: 1.5rem;
+}
+.header ul {
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+}
+.header li {
+    float: left;
+}
+.header li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 1.1rem;
+ }
+ .continer {
+   float: left;
+}
+ .article img {
+    float: left;
+    width: 671px;
+    height: 300px;
+    border-radius: 5px 5px 0px 0px;
+   
+    
+ }
+ .article {
+    float: left;
+    height: 500px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 50%;
+    margin: 35px 0px 15px 55px;
+    background-color: white;
+ }
+ .article h2 {
+    font-weight: 500;
+    font-size: 2rem;
+    padding: 25px 15px 10px 25px;
+ }
+ .article p {
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0px 15px 10px 25px;
+ }
+ .article button{
+    background-color: #FB6542;
+    padding: 10px;
+    margin: 10px 0px 10px 25px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+ }
+ .article button:hover{
+    background-color: grey;
+ }
+ .article1 {
+    float: left;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 50%;
+    margin: 35px 0px 15px 55px;
+    background-color: white;
+    padding: 15px;
+ }
+ .article1 h2{
+    margin: 15px;
+ }
+ .article1 P {
+    margin: 15px;
+ }
+ .article1 button {
+    margin: 0px 0px 0px 15px;
+    background-color: #FB6542;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+ }
+ .article1 {
+    
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 50%;
+    margin: -120px 0px 15px 55px;
+    background-color: white;
+    padding: 15px;
+ }
+ .article2 {
+    float: left;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 50%;
+    margin: 35px 0px 15px 55px;
+    background-color: white;
+    padding: 15px;
+ }
+ .article2 h2{
+    margin: 15px;
+ }
+ .article2 P {
+    margin: 15px;
+ }
+ .article2 h2{
+    margin: 15px;
+ }
+ .article2 P {
+    margin: 15px;
+ }
+ .article2 button {
+    margin: 0px 0px 0px 15px;
+    background-color: #FB6542;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+ }
+ .categ {
+    float: left;
+    background-color: white;
+    height: 300px;
+    width: 350px;
+    margin: 35px 0px 15px 55px;
+    border-radius: 5px;
+    padding: 15px;
+ }
+ .categ h3 {
+   font-size: 1.5rem;
+   font-weight: 500;
+ }
+.categ table {
+   border-collapse: collapse;
+   margin-top: 15px;
+   border-radius: 15px;
+}
+.categ td {
+   font-size: 1.1rem;
+   width: 20%;
+   border: 1px solid rgb(221, 218, 218);
+   padding: 15px;
+ }
+ .Recent {
+   float: left;
+   background-color: white;
+   height: 300px;
+   width: 350px;
+   margin: 35px 0px 15px 55px;
+   border-radius: 5px;
+   padding: 15px;
+}
+.Recent h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.Recent table {
+  border-collapse: collapse;
+  margin-top: 15px;
+  border-radius: 15px;
+}
+.Recent td {
+  font-size: 1.1rem;
+  width: 20%;
+  border: 1px solid rgb(221, 218, 218);
+  padding: 15px;
+}

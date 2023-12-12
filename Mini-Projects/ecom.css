@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#181D31 ;
+}
+.nav-bar{
+    height: 60px;
+    width: 100%;
+    background-color:#FB6542 ;
+}
+.nav-bar h3 {
+   color: white;
+   float: left;
+   padding: 15px;
+   font-size: larger;
+}
+.nav-bar ul {
+float: right;
+list-style-type: none;
+padding: 15px;
+font-size: larger;
+}
+.nav-bar ul li {
+    float: left;
+}
+.nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+
+}
+.content{
+    float: left;
+    width: 60%;
+    margin: 5px 0px 25px 85px;
+}
+.row h1{
+    color: white;
+    margin: 25px 0px 0px 25px;
+}
+.image1{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    float: left;
+    height: 350px;
+    width: 30%;
+    margin: 15px;
+    background-color: whitesmoke;
+}
+.image1 img {
+    border-radius: 5px 5px 0px 0px;
+    width: 240px;
+}
+.image1 h3{
+    font-size: 1.5rem;
+    margin: 25px 0px 15px 30px;
+    font-weight: bold;
+    font-weight: 500;
+}
+.image1 p {
+    font-size: 1.2rem;
+    margin: 5px 0px 10px 30px;
+}
+.image1 button {
+    width: 120px;
+    height: 35px;
+    margin: 5px 0px 0px 30px;
+    background-color: #FB6542;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.image1 button:hover {
+
+    background-color: #626364;
+}
+
+.image2{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    float: left;
+    height: 350px;
+    width: 30%;
+    margin: 15px;
+    background-color: whitesmoke;
+    display: inline;
+    }
+    .image2 img {
+        border-radius: 5px 5px 0px 0px;
+        width: 240px;
+    }
+    .image2 h3{
+        font-size: 1.5rem;
+        margin: 25px 0px 15px 30px;
+        font-weight: bold;
+        font-weight: 500;
+    }
+    .image2 p {
+        font-size: 1.2rem;
+        margin: 5px 0px 10px 30px;
+    }
+    .image2 button {
+        width: 120px;
+        height: 35px;
+        margin: 5px 0px 0px 30px;
+        background-color: #FB6542;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    .image2 button:hover {
+
+        background-color: #626364;
+    }
+.image3{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    float: left;
+    height: 350px;
+    width: 30%;
+    margin: 15px;
+    background-color: whitesmoke;
+    display: inline;
+}
+.image3 img {
+    border-radius: 5px 5px 0px 0px;
+    width: 240px;
+}
+.image3 h3{
+    font-size: 1.5rem;
+    margin: 25px 0px 15px 30px;
+    font-weight: bold;
+    font-weight: 500;
+}
+.image3 p {
+    font-size: 1.2rem;
+    margin: 5px 0px 10px 30px;
+}
+.image3 button {
+    width: 120px;
+    height: 35px;
+    margin: 5px 0px 0px 30px;
+    background-color: #FB6542;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.image3 button:hover {
+
+    background-color: #626364;
+}
+.image4{
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    float: left;
+    height: 350px;
+    width: 30%;
+    margin: 15px;
+    background-color: whitesmoke;
+    display: inline;
+}
+.image4 img {
+    border-radius: 5px 5px 0px 0px;
+    width: 240px;
+}
+.image4 h3{
+    font-size: 1.5rem;
+    margin: 25px 0px 15px 30px;
+    font-weight: bold;
+    font-weight: 500;
+}
+.image4 p {
+    font-size: 1.2rem;
+    margin: 5px 0px 10px 30px;
+}
+.image4 button {
+    width: 120px;
+    height: 35px;
+    margin: 5px 0px 0px 30px;
+    background-color: #FB6542;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.image4 button:hover {
+
+    background-color: #626364;
+}
+.cart{
+    width: 25%;
+    margin: 35px 40px 85px;
+    float: right;
+    
+}
+.cart h1{
+    padding-bottom: 15px;
+    color: whitesmoke;
+}
+
+.product {
+    font-weight: 100;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    height: 100px;
+    background-color: white;
+}
+.product p{
+       
+        padding: 10px 25px ;
+
+}
+.total{
+    padding: 25px 0px;
+}
+.total h1 {
+       font-weight: 500;
+       font-size: 1.8rem;
+}
+.total button {
+    margin-top: 10px;
+}
+.total button {
+    background-color: #FB6542;
+    width: 320px;
+    height: 35px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.total button:hover{
+    background-color: #626364;
+}

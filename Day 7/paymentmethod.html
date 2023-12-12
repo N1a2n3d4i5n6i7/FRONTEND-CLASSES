@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title> Payment Page</title>
+    </head>
+    <body>
+      <form>
+        <form action="savedata.php" method="get">
+        <h1> Add a Payment Method</h1>
+        <p>Due to recent changes in bank regulations for remote credit card transctions,<br>
+         you'll need togo to payment methods each month to pay your balance.<br>
+        <a href="paymentmethod.html" target = "_blank"> Learn more about adding Payment Methods</p></a>
+        <p> We accept the following cards</p>
+        <img src="visa.jpg"  height="30"><img src="mastercard.jpg" height="30"><br>
+         <p>Card Number</p>
+          <input type="text" name="card number" id="card"> <br>
+         <p>security code <br><input type=" number" name="code" id="code " required></p>
+        <p> Expiration Month<br> <input type="month"></p>
+        <p> Expiration year <br> <input type="year"></p>
+        <p> Name on card <br> <input type="text" name="card" id="card" required></p>
+        <p> Address line 1 <br> <input type="text" name="address" id="address " required></p>
+        <p> Address line 2 (optional) <br> <input type="text" name="address2" id="address2"></p>
+        <p> Address line 3 <br> <input type=" text" name="address3" id="address3 "></p>
+        <p> city <br> <input type=" text" name="city" id="city " required></p>
+        <p> state :<br> <select>
+                  <option>   </option> 
+                <option> Andhra Pradesh</option>
+                <option> Karnataka </option>
+                <option> kerala </option>
+                <option> Tamilnadu </option>
+                <option> Gujarat </option>
+            </select></p>
+            <p> postal code <br> <input type=" number" name="number" id="number" required></p>
+           <p> Country/Region:<br> <select>
+                <option> India   </option> 
+              <option> USA</option>
+              <option> Canada </option>
+              <option> Mexico </option>
+              <option> Nepal </option>
+              <option> China</option>
+          </select></p>
+          <p> By clicking the button below to continue, you consent to tokenize and save this <br>card.You'll be redircted to your bank's website for verification<br>
+          <a href="paymentmethod.html" target = "_blank"> Learn more about tokenization</p></a>
+          <p> <input type="button" value ="save"> <input type="button" value ="cancel"></p></p>
+        </form>
+        </body>
+</html>

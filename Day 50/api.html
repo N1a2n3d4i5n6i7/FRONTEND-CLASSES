@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+   </head>
+   <body>
+    <!-- API(Application programming interface) means to connect to the server and get the data from the server which is hosted somewhere in the wrold
+   JSON -- the data from the server comes in JSON fromat
+   Third Party APIs ..someother websites are used in our application example google maps, twitter, instagram
+   Fetch API -(to make HTTP calls) - Developer Methods
+   Local Storage(browser storage) API - we can store our data into the browser itself and later we can get the same data and is completely domain based(like fb.com is domain, instagram.com)
+                                                                                                                                       www.incometax.gov.in ..here incometax is domain and gov.in is subdomain.               
+   
+     and the exapmles are saving like id, pwds and atm card numbers 
+     
+     local storage - Get the data, modify item, remove item.
+    -->  
+    
+    <script>
+        localstorage.setItem("selected country","india"); //this is the examppe when user wants the selected country remain same when they want to acces the next time
+        localStorage.setItem("password","n123"); // here we can remove the item by using localstorage.removeitem
+        var selcountry = localStorage.getItem("selected country");
+        var username = localStorage.getItem("username");
+        console.log(selcountry);
+        
+
+
+    </script>
+   </body>
+   </html>
